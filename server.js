@@ -13,9 +13,7 @@ let server = net.createServer(connection => {
         if (data == undefined || data == null) {
 			      return;
 		    }
-
 		    const dataArgs = data.toString().split(" ");
-
 	      if (dataArgs.length === 0) { // in case there is no command
             connection.write("ERROR no data");
             return; // prevents other code from running
@@ -28,7 +26,7 @@ let server = net.createServer(connection => {
 
 			      connection.write("RESULT " + result);
 			      return; // end
-		    } else { // invalid command
+		    } else {
             connection.write("ERROR invalid command");
             return;
         }
