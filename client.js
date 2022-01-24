@@ -1,3 +1,14 @@
+// client.js
+
+
+// need node.js
+// step 1. npm init -y
+// step 2. npm install
+//  step 3. node server.js
+//  step 4. node client.js
+
+//  WORK FOR DCW 61200 AND 61193
+
 const net = require("net"); // import net
 const readline = require("readline").createInterface({
         input: process.stdin,
